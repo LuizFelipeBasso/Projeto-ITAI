@@ -1,0 +1,53 @@
+:root {
+    --main-bg-color:#002f49;
+}
+
+.head {
+    background: var(--main-bg-color);
+    color: #fff
+}
+
+.destaque {
+    background: var(--main-bg-color);
+    color: #fff
+}
+
+.destaque img{
+    max-width: 100%;
+    height: auto;
+}
+
+.destaque-conteudo{
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
+.conteudo-destaque-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.detalhe-destaque{
+    border: 80px solid transparent;
+    border-bottom: 195px solid var(--main-bg-color);
+    position: absolute;
+    top: -120px;
+    left: -82px;
+    z-index: 1;
+}
+
+.detalhe-destaque::after {
+    content: '';
+    position: absolute;
+    left: -80px;
+    top: 194px;
+    border: 80px solid transparent;
+    border-top: 445px solid var(--main-bg-color);
+}
+
+/* CSS PARA DISPOSITIVOS GRANDES */
+@media screen and (min-width: 1080px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
